@@ -6,8 +6,7 @@
     <title>My Blog</title>
     
     <!-- Open Graph Meta Tags for Facebook Sharing -->
-    <!-- Updated July 6, 2025 -->
-    <meta property="og:title" content="urmese News Media">
+    <meta property="og:title" content="My Blog">
     <meta property="og:description" content="Welcome to my blog where I share interesting articles and insights">
     <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=My+Blog">
     <meta property="og:url" content="https://yourusername.github.io/your-blog-repo">
@@ -15,7 +14,7 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Burmese News">
+    <meta name="twitter:title" content="My Blog">
     <meta name="twitter:description" content="Welcome to my blog where I share interesting articles and insights">
     <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=My+Blog">
     
@@ -174,73 +173,6 @@
             margin-bottom: 10px;
         }
         
-        /* Post Detail Page */
-        .post-detail {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .post-detail img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-        
-        .post-detail h1 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-shadow: none;
-        }
-        
-        .post-detail-meta {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #eee;
-        }
-        
-        .post-detail-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .post-detail-content h2 {
-            color: #333;
-            margin: 30px 0 15px 0;
-        }
-        
-        .post-detail-content p {
-            margin-bottom: 20px;
-        }
-        
-        .post-detail-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        
-        .back-btn {
-            background: #6c757d;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .back-btn:hover {
-            background: #5a6268;
-            transform: translateX(-5px);
-        }
-        
         .loading {
             text-align: center;
             color: white;
@@ -273,133 +205,62 @@
             .post-content {
                 padding: 20px;
             }
-            
-            .post-detail {
-                padding: 20px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Burmese news Media</h1>
-            <p class="subtitle">လက်ရှိပြည်တွင်းမှာ ဖြစ်ပွားနေတဲ့ သတင်းတွေကို တင်ဆက်ပေးနေတာပါ</p>
+            <h1>My Blog</h1>
+            <p class="subtitle">Sharing insights, stories, and ideas</p>
         </header>
         
-        <!-- Home Page Content -->
-        <div id="home-page">
-            <!-- Top Ad Space -->
-            <div class="ad-space">
-                <h3>Advertisement Space</h3>
-                <p>728x90 Banner Ad - Replace with your ad code</p>
-                <!-- Replace this with your actual ad code -->
-                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-            </div>
-            
-            <div id="posts-container" class="blog-grid">
-                <div class="loading">Loading posts...</div>
-            </div>
-            
-            <!-- Bottom Ad Space -->
-            <div class="ad-space">
-                <h3>Advertisement Space</h3>
-                <p>728x90 Banner Ad - Replace with your ad code</p>
-            </div>
+        <!-- Top Ad Space -->
+        <div class="ad-space">
+            <h3>Advertisement Space</h3>
+            <p>728x90 Banner Ad - Replace with your ad code</p>
         </div>
         
-        <!-- Post Detail Page -->
-        <div id="post-page" style="display: none;">
-            <a href="#" onclick="showHomePage()" class="back-btn">← Back to Home</a>
-            <div id="post-detail-container"></div>
-            
-            <!-- Ad Space in Post -->
-            <div class="ad-space">
-                <h3>Advertisement Space</h3>
-                <p>Rectangle Ad 300x250 - Replace with your ad code</p>
-            </div>
+        <div id="posts-container" class="blog-grid">
+            <div class="loading">Loading posts...</div>
+        </div>
+        
+        <!-- Bottom Ad Space -->
+        <div class="ad-space">
+            <h3>Advertisement Space</h3>
+            <p>728x90 Banner Ad - Replace with your ad code</p>
         </div>
     </div>
 
     <script>
-        // Your blog posts data - you can edit this or load from an external JSON file
+        // Your blog posts data
         const blogPosts = [
             {
-                id: 1,
+                id: 4,
                 title: "စစ်ကောင်စီမိုးဗြဲမြိုကို ပြန်လည်သိမ်းပိုက် အပြည့်အစုံသိရန် ပုံကိုနှိပ်ပါ",
                 excerpt: "ကောင်စီမှ KNDF သိမ်းပိုက်ထားသည် မိုးဗြဲမြိုကို လွန်ခဲ့သော လအနည်းငယ်ကပင် စစ်ကြောင်းထိုးကာ စစ်ဆင်နေကာ ၊ ယနေ့ပင် မိုးဗြဲမြိုကို အပြီးသတ်သိမ်းပိုက်ကာ ၊ အလုံးစုံထိန်းချုပ်လိုက်တာ ဖြစ်ပါတယ်။",
-                content: `
-                    <h2>မိုးဗြဲမြို သိမ်းပိုက်မှု</h2>
-                    <p>ကောင်စီမှ KNDF သိမ်းပိုက်ထားသည် မိုးဗြဲမြိုကို လွန်ခဲ့သော လအနည်းငယ်ကပင် စစ်ကြောင်းထိုးကာ စစ်ဆင်နေကာ ၊ ယနေ့ပင် မိုးဗြဲမြိုကို အပြီးသတ်သိမ်းပိုက်ကာ ၊ အလုံးစုံထိန်းချုပ်လိုက်တာ ဖြစ်ပါတယ်။</p>
-                    
-                    <img src="https://i.ibb.co/wZJd8x86/image1.jpg" alt="မိုးဗြဲမြို ပုံ ၁" style="width: 100%; margin: 20px 0;">
-                    
-                    <h2>ဒေသခံများ ထွက်ပြေးတိမ်းရှောင်မှု</h2>
-                    <p>ထောင်နဲ့ ချီတဲ့ ဒေသခံတွေထွက်ပြေးတိမ်းရှောင်နေရတာဖြစ်ပြီး၊ နယ်မြေရှင်းလင်းမှုတွေမှာလဲဆက်တိုက်ဖြစ်ပေါ်နေတာဖြစ်ပါတယ်။</p>
-                    
-                    <img src="https://i.ibb.co/271yqsLW/image2.jpg" alt="မိုးဗြဲမြို ပုံ ၂" style="width: 100%; margin: 20px 0;">
-                    
-                    <h2>စစ်ကောင်စီ၏ တိုက်ခိုက်မှု</h2>
-                    <p>စစ်ကောင်စီမှ 2025 အစပိုင်းကပင် မိုးဗြဲ ဖယ်ခုံ တစ်ဝိုက်ကို လက်နက်ကြီးလေကြောင်းပစ်ကူဖြင့် စစ်ကြောင်းထိုးလာခြင်းဖြစ်ပြီး တစ်ခြားသော တိုင်းရင်းသားလက်နက်ကိုင်နှင့် ပြည်သူ့ကာကွယ်ရေးတပ်ဖွဲတွေမှာ အင်အားမသာလိုနောက်ဆုတ်နေရတာဖြစ်ပါတယ်။</p>
-                    
-                    <img src="https://i.ibb.co/BFFcv0V/image3.jpg" alt="မိုးဗြဲမြို ပုံ ၃" style="width: 100%; margin: 20px 0;">
-                    <img src="https://i.ibb.co/DmZM4Qh/image4.jpg" alt="မိုးဗြဲမြို ပုံ ၄" style="width: 100%; margin: 20px 0;">
-                    <img src="https://i.ibb.co/5hcyPsKX/image5.jpg" alt="မိုးဗြဲမြို ပုံ ၅" style="width: 100%; margin: 20px 0;">
-                `,
-                image: "https://i.ibb.co/wZJd8x86/image1.jpg",
+                image: "https://via.placeholder.com/400x200/dc3545/ffffff?text=Military+News",
                 date: "2025-01-07",
-                slug: "moe-bye-military-takeover-2025"
+                slug: "moe-bye-military-takeover-2025",
+                url: "moe-bye-military-takeover-2025.html"
             },
             {
                 id: 2,
                 title: "How to Monetize Your Blog with Google AdSense",
                 excerpt: "Learn the best strategies for maximizing your AdSense revenue and optimizing ad placement for better earnings.",
-                content: `
-                    <h2>Getting Started with AdSense</h2>
-                    <p>Google AdSense is one of the most popular ways to monetize your blog. It displays relevant ads to your visitors and pays you when they click or view them.</p>
-                    
-                    <h2>Optimization Strategies</h2>
-                    <p><strong>Ad Placement</strong><br>
-                    Strategic placement above the fold, within content, and at the end of articles typically performs best.</p>
-                    
-                    <p><strong>Content Quality</strong><br>
-                    High-quality, original content attracts more visitors and keeps them engaged longer.</p>
-                    
-                    <p><strong>Site Speed</strong><br>
-                    Fast-loading pages improve user experience and ad performance.</p>
-                    
-                    <h2>Common Mistakes to Avoid</h2>
-                    <p>Don't click your own ads, avoid excessive ad density, and ensure your content complies with AdSense policies.</p>
-                `,
                 image: "https://via.placeholder.com/400x200/764ba2/ffffff?text=AdSense+Guide",
                 date: "2024-01-10",
-                slug: "adsense-monetization-guide"
+                slug: "adsense-monetization-guide",
+                url: "adsense-monetization-guide.html"
             },
             {
                 id: 3,
                 title: "Static vs Dynamic Websites: Which is Right for You?",
                 excerpt: "Compare static and dynamic websites to make the best choice for your blog and budget. Learn about performance, security, and cost differences.",
-                content: `
-                    <h2>Understanding the Differences</h2>
-                    <p>Static websites are pre-built HTML files served directly to users, while dynamic websites generate content on-the-fly using databases and server-side processing.</p>
-                    
-                    <h2>Static Website Advantages</h2>
-                    <p><strong>Performance:</strong> Lightning-fast loading times<br>
-                    <strong>Security:</strong> Fewer attack vectors<br>
-                    <strong>Cost:</strong> Lower hosting costs<br>
-                    <strong>Reliability:</strong> Less likely to break</p>
-                    
-                    <h2>Dynamic Website Benefits</h2>
-                    <p><strong>Interactivity:</strong> User accounts, comments, real-time updates<br>
-                    <strong>Content Management:</strong> Easy to update without technical skills<br>
-                    <strong>Functionality:</strong> E-commerce, search, personalization</p>
-                    
-                    <h2>Making Your Choice</h2>
-                    <p>Choose static for blogs, portfolios, and informational sites. Choose dynamic for e-commerce, social platforms, and complex applications.</p>
-                `,
                 image: "https://via.placeholder.com/400x200/28a745/ffffff?text=Static+vs+Dynamic",
                 date: "2024-01-05",
-                slug: "static-vs-dynamic-websites"
+                slug: "static-vs-dynamic-websites",
+                url: "static-vs-dynamic-websites.html"
             }
         ];
 
@@ -413,7 +274,7 @@
             }
             
             container.innerHTML = blogPosts.map(post => `
-                <article class="post-card" onclick="showPost(${post.id})">
+                <article class="post-card" onclick="window.location.href='${post.url}'">
                     <div class="post-image" style="background-image: url('${post.image}')">
                         <div class="post-date">${formatDate(post.date)}</div>
                     </div>
@@ -421,75 +282,20 @@
                         <h2 class="post-title">${post.title}</h2>
                         <p class="post-excerpt">${post.excerpt}</p>
                         <div class="post-meta">
-                            <a href="#" onclick="event.stopPropagation(); showPost(${post.id})" class="read-more">Read More</a>
-                            <a href="#" onclick="event.stopPropagation(); sharePost(${post.id})" class="share-btn">Share on Facebook</a>
+                            <a href="${post.url}" onclick="event.stopPropagation()" class="read-more">Read More</a>
+                            <a href="#" onclick="event.stopPropagation(); sharePost('${post.url}')" class="share-btn">Share on Facebook</a>
                         </div>
                     </div>
                 </article>
             `).join('');
         }
 
-        // Show individual post
-        function showPost(postId) {
-            const post = blogPosts.find(p => p.id === postId);
-            if (!post) return;
-            
-            // Update meta tags for social sharing
-            updateMetaTags(post);
-            
-            document.getElementById('home-page').style.display = 'none';
-            document.getElementById('post-page').style.display = 'block';
-            
-            document.getElementById('post-detail-container').innerHTML = `
-                <article class="post-detail">
-                    <img src="${post.image}" alt="${post.title}">
-                    <h1>${post.title}</h1>
-                    <div class="post-detail-meta">
-                        <p><strong>Published:</strong> ${formatDate(post.date)}</p>
-                        <a href="#" onclick="sharePost(${post.id})" class="share-btn">Share on Facebook</a>
-                    </div>
-                    <div class="post-detail-content">
-                        ${post.content}
-                    </div>
-                </article>
-            `;
-            
-            // Update URL without refreshing page
-            window.history.pushState({postId}, post.title, `#${post.slug}`);
-        }
-
-        // Show home page
-        function showHomePage() {
-            document.getElementById('home-page').style.display = 'block';
-            document.getElementById('post-page').style.display = 'none';
-            window.history.pushState({}, 'My Blog', '#');
-        }
-
         // Share post on Facebook
-        function sharePost(postId) {
-            const post = blogPosts.find(p => p.id === postId);
-            if (!post) return;
-            
-            const postUrl = `${window.location.origin}${window.location.pathname}#${post.slug}`;
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postUrl)}`;
+        function sharePost(postUrl) {
+            const fullUrl = `${window.location.origin}${window.location.pathname.replace('index.html', '')}${postUrl}`;
+            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`;
             
             window.open(facebookUrl, '_blank', 'width=600,height=400');
-        }
-
-        // Update meta tags for social sharing
-        function updateMetaTags(post) {
-            const postUrl = `${window.location.origin}${window.location.pathname}#${post.slug}`;
-            
-            document.querySelector('meta[property="og:title"]').content = post.title;
-            document.querySelector('meta[property="og:description"]').content = post.excerpt;
-            document.querySelector('meta[property="og:image"]').content = post.image;
-            document.querySelector('meta[property="og:url"]').content = postUrl;
-            
-            document.querySelector('meta[name="twitter:title"]').content = post.title;
-            document.querySelector('meta[name="twitter:description"]').content = post.excerpt;
-            document.querySelector('meta[name="twitter:image"]').content = post.image;
-            
-            document.title = `${post.title} - Burmese News`;
         }
 
         // Format date
@@ -497,28 +303,6 @@
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             return new Date(dateString).toLocaleDateString('en-US', options);
         }
-
-        // Handle browser back/forward
-        window.addEventListener('popstate', function(event) {
-            if (event.state && event.state.postId) {
-                showPost(event.state.postId);
-            } else {
-                showHomePage();
-            }
-        });
-
-        // Check URL on page load
-        window.addEventListener('load', function() {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                const post = blogPosts.find(p => p.slug === hash);
-                if (post) {
-                    showPost(post.id);
-                    return;
-                }
-            }
-            displayPosts();
-        });
 
         // Initialize
         displayPosts();
